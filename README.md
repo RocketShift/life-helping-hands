@@ -22,7 +22,7 @@ npm install -g gulp
 
 # 1 Clone this repo
 
-git clone https://github.com/dresdain/life-helping-hands.git
+git clone https://github.com/RocketShift/life-helping-hands
 
 # 2 Navigate into the repo directory
 
