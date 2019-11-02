@@ -5,10 +5,10 @@
   <meta charset="utf-8">
   <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="description" content="This is a boilerplate for a Bootstrap 4.1.0 project">
-  <meta name="keywords" content="HTML, CSS, JS, Sass, JavaScript, framework, bootstrap, front-end, frontend, web development">
-  <meta name="author" content="Chingiz Mammadov">
-  <title>Bootstrap 4 boilerplate</title>
+  <meta name="description" content="An advocacy group creating access to quality wellness care has never been easier">
+  <meta name="keywords" content="An advocacy group creating access to quality wellness care has never been easier">
+  <meta name="author" content="LIFE HELPING HANDS :: DRB ">
+  <title>Life Helping Hands</title>
   <link rel="shortcut icon" href="favicon.ico">
 
   <!-- build:css -->
@@ -28,7 +28,7 @@
           <img src="./assets/img/logo.jpeg" alt="Life Helping Hands">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
-          <span class="navbar-toggler-icon"></span>
+          <i class="fa fa-bars"></i>
         </button>
       </div>
       <div class="navbar-collapse collapse w-50 justify-content-center order-2" id="collapsingNavbar">
@@ -44,8 +44,8 @@
           </li>
         </ul>
       </div>
-      <span class="navbar-text small text-truncate mt-1  text-right order-1 order-md-last">
-        <a class="btn btn-success font-weight-bold" role="button" href="./donate.html">Donate ✨</a>
+      <span class="navbar-text navbar-cta small text-truncate mt-1  text-right order-1 order-md-last">
+        <a class="btn btn-success   font-weight-bold" role="button" href="./donate.html">Donate</a>
       </span>
     </div>
   </nav>
@@ -59,7 +59,7 @@
         <h1 class="display-4 text-center">An advocacy group creating access to quality wellness care has never been easier... </h1>
         <p class="lead">Talk To A U.S Licensed Doctor Where You Want & When You Want For Just $9.90 A Month</p>
         <hr>
-        <a class="btn btn-success font-weight-bold text-uppercase btn-lg btn-rounded" role="button" href="./">SEt UP MY ACCOUNT ✨</a>
+        <a class="btn btn-success btn-cta font-weight-bold text-uppercase btn-lg btn-rounded btn-shadowed" role="button" href="./">SEt UP MY ACCOUNT ✨</a>
       </div>
 
     </div>
@@ -114,7 +114,7 @@
                 </div>
 
                 <div class="text-center">
-                    <a class="btn btn-success font-weight-bold text-uppercase btn-lg btn-rounded btn-shadowed" role="button" href="./">Partner with us</a>
+                    <a class="btn btn-success btn-cta text-spaced font-weight-bold text-uppercase btn-lg btn-rounded btn-shadowed" role="button" href="./">Partner with us</a>
                 </div>
               </div>
             </div> 
@@ -122,18 +122,110 @@
   </section>
 
   <section id="slide" class="slide-show">
-      <div class="rio-promos">
-          <img src="http://maggiesadler.com/wp-content/uploads/2015/10/11189261_759116200870985_1595157767_n.jpg" />
-          <img src="http://maggiesadler.com/wp-content/uploads/2015/10/10004088_1491055334449687_1187165020_n.jpg" />
-          <img src="http://placehold.it/350x550" />
-          <img src="http://placehold.it/350x550" />
+      <div class="slideshow-vision">
+        <div>
+            <img src="./assets/img/vision1.png" alt="">
+            <div class="feature-item standalone bg-gray-2"> 
+                <div class="desc">
+                    Video access in just a snap from any device
+                </div>
+              </div>
+        </div>
+        <div>
+            <img src="./assets/img/vision2.png" alt="">
+            <div class="feature-item standalone bg-gray-2"> 
+                <div class="desc">
+                    Get medical treatment & prescriptions for non-medical conditions from your smartphone
+                </div>
+              </div>
+        </div>
+        <div>
+            <img src="./assets/img/vision3.png" alt="">
+            <div class="feature-item standalone bg-gray-2"> 
+                <div class="desc">
+                    No more waiting rooms, or delays to visit a certified doctor
+                </div>
+              </div>
+        </div>  
       </div>
   </section>
 
 
+  <section id="testimonial" class="testimonial-wrapper">
+      <div class="container">
+          <div class="slideshow-testimonial">
+              <div class="testimonial-item">
+                <img src="./assets/img/quote.svg" alt="" class="quote">
+                 <h3> “We are transforming how people access healthcare around the world. We are creating a new kind of healthcare experience – one with greater convenience, outcomes, and value.” Our value partnerships combined with our Mobile App drives community participation in healthy behaviors designed to prevent and lower incident rates of preventable illnesses.”</h3>
+              </div>  
+              <div class="testimonial-item">
+                  <img src="./assets/img/quote.svg" alt="" class="quote">
+                   <h3> “We are transforming how people access healthcare around the world. We are creating a new kind of healthcare experience – one with greater convenience, outcomes, and value.” Our value partnerships combined with our Mobile App drives community participation in healthy behaviors designed to prevent and lower incident rates of preventable illnesses.”</h3>
+                </div> 
+            </div>
+            
+      </div>
+  </section>
+
+
+  <section id="contact" class="contact-wrapper bg-gray-3">
+      <div class="container">
+        <h1 class="text-uppercase text-center text-white">contact Life helping hands</h1>
+
+        <form class="contact-form">
+            <div class="row">
+              <div class="col-md">
+                <input type="text" name="name" class="form-control" placeholder="Name">
+              </div>
+              <div class="col-md">
+                <input type="email" name="email" class="form-control" placeholder="Email">
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                  <input type="text" name="subject" class="form-control" placeholder="Subject">
+                </div> 
+              </div>
+              <div class="row">
+                  <div class="col-md">
+                      <textarea class="form-control" name="message" id="message" rows="3" placeholder="Type your message here..."></textarea>
+                  </div> 
+                </div> 
+                    <button type="submit" class="btn btn-block btn-lg btn-light" >Submit</button> 
+          </form> 
+      </div>
+  </section>
+
+
+  <section id="donate" class="donate-wrapper bg-gray-3">
+      <div class="donate-border">
+          <div class="container">
+              <h1 class="text-capitalize text-center font-weight-bold text-white">Help Us Continue To Provide Quality Care At An Affordable Price
+                </h1>
+              <div class="text-center">
+                  <a class="btn btn-success text-spaced btn-cta font-weight-bold text-uppercase btn-lg btn-rounded btn-shadowed" role="button" href="./">DONATE</a>
+              </div> 
+            </div>
+      </div>
+  </section>
+
+
+ 
+  <footer>
+    <div class="social">
+      <a href="#"><img src="./assets/img/fb.png" alt=""></a>
+      <a href="#"><img src="./assets/img/twitter.png" alt=""></a>
+      <a href="#"><img src="./assets/img/linkedin.png" alt=""></a>
+    </div>
+    <div class="text-center">
+        ©2019 by Life Helping Hands. 
+    </div>
+  </footer>
+
 
   <!-- build:js -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/scripts.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>

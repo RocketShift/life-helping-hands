@@ -1,3 +1,11 @@
+/* 
+    Life Helping Hands
+    Author: DRB
+
+*/
+
+
+
 //====================================
 // Global Imports
 //====================================
@@ -32,6 +40,7 @@
 $brand__purple : #566FB8;
 $brand__gray : #F7F7F7;
 $brand__gray2 : #727C8F;
+$brand__gray3 : #54728A;
 
 
 $brand__font : 'Nunito Sans', sans-serif;
@@ -52,12 +61,30 @@ body{
         }
 
     }
+    .navbar-nav{
+        @include media-mobile{
+            padding-top: 20px !important;
+        }
+        .nav-item{
+            @include media-mobile{ 
+                margin-bottom: 20px;
+            }
+        }
+    }
+    @include media-mobile{
+        .navbar-toggler{
+            position: absolute;
+                right: 12px;
+                top: 22px;
+        }
+    }
     @include media-desktop-up{
         min-height: 100px; 
         .navbar-nav{
             .nav-item{
-                width: calc(98% / 3);
+                width: calc(98% / 3); 
             }
+           
             min-width: 500px;
             justify-content: space-around;
         }
@@ -67,7 +94,7 @@ body{
 .navbar-dark .navbar-toggler{
     color: $brand__purple;
     border-color: $brand__purple;
-    transform: scale(0.8, 0.8) translateY(2px);
+    transform: scale(1.1,1.1    ) translateY(1px);
     transform-origin: center center;
 }
 .navbar-toggler-icon{
@@ -79,6 +106,9 @@ body{
 }
 .bg-gray-2{
     background-color: $brand__gray2;
+}
+.bg-gray-3{
+    background-color: $brand__gray3;
 }
 .btn-outline-brand{
     color: $brand__purple;
@@ -93,6 +123,18 @@ body{
 }
 .btn-shadowed{
     box-shadow: -0.28px 0.96px 4px 0px rgba(0,0,0,0.6);
+}
+.btn-cta{
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #5DB267;
+    font-weight: 900 !important;
+}
+
+.navbar-cta{
+    @include media-mobile{
+        margin-right: 55px;
+    }
 }
 
 .special-jumbtron{
@@ -139,31 +181,37 @@ body{
         flex-direction: column;
     }
     padding: 30px 0px;
-    .feature-item{  
-        width: calc(100% / 3);  
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        color: #FFF;
-        text-align: center;
-        img{
-            filter: brightness(0) invert(1);
-            max-height: 50px; 
-            margin-bottom: 30px;
-        }
+    
+}
+
+.feature-item{  
+    width: calc(100% / 3);  
+    &.standalone{
+        width: 100%;
+        padding: 30px 0px;  
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    img{
+        filter: brightness(0) invert(1);
+        max-height: 50px; 
+        margin-bottom: 30px;
+    }
+    .desc{
+        font-weight: 400;
+        font-family: $brand__font2;
+        font-size: 18px;
+        padding: 0px 20px
+    }
+    @include media-mobile{ 
+        width: 100%;
+        padding: 20px 0px;
         .desc{
-            font-weight: 400;
-            font-family: $brand__font2;
-            font-size: 18px;
-            padding: 0px 20px
-        }
-        @include media-mobile{ 
-            width: 100%;
-            padding: 20px 0px;
-            .desc{
-                padding: 0px 50px
-            }
+            padding: 0px 50px
         }
     }
 }
@@ -178,6 +226,9 @@ body{
 
 .vision-wrapper{
     padding: 50px;
+    @include media-mobile{
+        padding: 50px 0px 50px 0px;
+    }
     h1{
         text-align: center;
         font-size: 40px;
@@ -217,6 +268,134 @@ body{
         bottom: 0px;
         height: 100%;
         width: 100%;
-        pointer-events: none    ;
+        pointer-events: none;
     }
+}
+
+.slideshow-vision{
+    img{
+        max-width: 100%;
+    }
+    background-color: $brand__gray2;
+}
+
+.testimonial-wrapper{
+    background-color: #C4CBDA;
+}
+
+.testimonial-item{
+    padding: 80px;
+    text-align: center;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $brand__font2;
+    .quote{
+        stroke-width: 0;
+        fill-opacity: 1;
+        stroke: #999999;
+        stroke-opacity: 1;
+        fill: rgba(84, 114, 138, 1);
+        height: 40px;
+        width: 40px;
+        margin-bottom: 40px;
+    }
+    h3{
+        font-size:28px; 
+        line-height:1.41em; 
+        text-align:center;
+    }
+    @include media-mobile{
+        padding: 80px 10px;
+        h3{
+            font-size: 20px !important;
+        }
+    }
+}
+
+
+.contact-wrapper{ 
+    padding: 80px 0px;
+    h1{
+        font-family: $brand__font;
+        font-weight: bold;
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+.contact-form{
+    > .row > .col-md{
+        margin-bottom: 30px;
+    }
+    .form-control{
+        background-color: transparent !important;
+        color: #FFF;
+        border: 0px;
+        border-bottom: 1px solid #FFF;
+        border-radius: 0px;
+        font-family: $brand__font2;
+        &:focus, &:active, &.active{
+            background-color: transparent;
+            border: 1px solid #FFF;
+        }
+        
+    }
+
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: #FFF;
+        opacity: 1; /* Firefox */
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #FFF;
+      }
+      
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color: #FFF;
+      }
+}
+
+
+.donate-wrapper{
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 200px;
+    }
+    .donate-border{
+        border-top: 5px solid #9BCBA1;
+        border-bottom: 5px solid #9BCBA1;
+        padding: 120px 0px;
+    }
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.text-spaced{
+    letter-spacing: 4px;
+    font-weight: bolder;
+}
+
+footer{
+    padding: 80px 0px;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .social{
+        display: flex;
+        min-width: 150px;
+        justify-content: space-around;
+        align-items: center;
+        img{
+            max-height: 30px;
+        }
+        margin-bottom: 60px;
+    }
+    font-family: $brand__font2;
 }
