@@ -5,6 +5,8 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
  */
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&display=swap");
 *,
 *::before,
 *::after {
@@ -738,7 +740,7 @@ pre {
       max-width: 960px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1140px; } }
+      max-width: 1250px; } }
 
 .container-fluid {
   width: 100%;
@@ -6621,7 +6623,7 @@ html {
       max-width: 960px; } }
   @media (min-width: 1200px) {
     .container {
-      max-width: 1140px; } }
+      max-width: 1250px; } }
 
 .container-fluid {
   width: 100%;
@@ -7725,16 +7727,6 @@ html {
   position: relative;
   min-height: 100%; }
 
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px; }
-
-.jumbotron {
-  background-image: url("https://www.smak.co.za/images/bg.jpg");
-  background-size: 100% 100%;
-  color: #b0bec5;
-  margin-bottom: 0; }
-
 .navbar-scroll {
   background-color: rgba(0, 123, 255, 0.4);
   transition: background-color 0.5s; }
@@ -7747,111 +7739,29 @@ body {
   PRIMARY STRUCTURE
 ============================================================ */
 .parallax-container {
-  max-width: 960px;
   margin: 0 auto; }
 
 /* ============================================================
   SECTIONS
 ============================================================ */
-section.module:last-child {
-  margin-bottom: 0; }
-
-section.module h2 {
-  margin-bottom: 40px;
-  font-family: "Roboto Slab", serif;
-  font-size: 30px; }
-
-section.module p {
-  margin-bottom: 40px;
-  font-size: 16px;
-  font-weight: 300; }
-
-section.module p:last-child {
-  margin-bottom: 0; }
-
-section.module.content {
-  padding: 40px 0;
-  background-color: rgba(207, 216, 220, 0.5); }
-
-section.module.content:last-child {
-  margin-bottom: 60px; }
-
-section.module.parallax {
-  padding: 240px 0;
-  background-position: 0 0; }
-
-section.module.parallax h1 {
-  color: #1e1e1e;
-  font-size: 48px;
-  line-height: 1;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  text-shadow: 0 0 10px white; }
-
 section.module.parallax-1 {
-  background-image: url("https://i.ytimg.com/vi/SwOaV-pzGcA/maxresdefault.jpg");
+  background-image: url("../img/hero-banner.jpg");
   background-position: 50% 0;
   background-repeat: repeat;
   background-attachment: fixed;
-  background-size: cover;
-  background-color: rgba(0, 123, 255, 0.4);
-  background-blend-mode: screen; }
+  background-size: cover; }
 
-section.module.parallax-2 {
-  background-image: url("http://www.planwallpaper.com/static/images/Fall-Nature-Background-Pictures.jpg");
-  background-position: 50% 0;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: rgba(0, 123, 255, 0.4);
-  background-blend-mode: screen; }
-
-section.module.parallax-3 {
-  background-image: url("http://www.psd-dude.com/tutorials/resources-images/free-rain-and-raindrop-textures-for-photoshop/raindrops-window-background.jpg");
-  background-position: 50% 0;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: rgba(0, 123, 255, 0.4);
-  background-blend-mode: screen; }
+@media (max-width: 760px) {
+  section.module.parallax .container {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; } }
 
 @media all and (min-width: 600px) {
-  section.module h2 {
-    font-size: 42px; }
-  section.module p {
-    font-size: 20px; }
   section.module.parallax {
-    padding: 300px 0; }
-  section.module.parallax h1 {
-    font-size: 96px; } }
-
-@media all and (min-width: 960px) {
-  section.module.parallax h1 {
-    font-size: 160px; } }
-
-/*footer*/
-.footer .container-fluid {
-  height: auto; }
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  line-height: 60px; }
-
-footer .container-fluid a {
-  display: inline-block;
-  color: #ddd;
-  padding-left: 1em; }
-
-footer .container-fluid p {
-  display: inline-block;
-  color: #ddd;
-  padding-left: 1em;
-  padding-right: 2em; }
+    padding: 250px 0px 150px 0px; } }
 
 @media (max-width: 768px) {
   .col-md-4 {
@@ -7867,7 +7777,156 @@ footer .container-fluid p {
 .left {
   text-align: left; }
 
-.parallax {
-  position: relative; }
+/* Custom shit */
+body {
+  font-family: "Nunito Sans", sans-serif; }
+
+.navbar {
+  background-color: #F7F7F7 !important; }
+  .navbar .navbar-brand img {
+    max-height: 50px; }
+    @media (max-width: 991px) {
+      .navbar .navbar-brand img {
+        max-height: 35px; } }
+  @media (min-width: 1024px) {
+    .navbar {
+      min-height: 100px; }
+      .navbar .navbar-nav {
+        min-width: 500px;
+        justify-content: space-around; }
+        .navbar .navbar-nav .nav-item {
+          width: calc(98% / 3); } }
+
+.navbar-dark .navbar-toggler {
+  color: #566FB8;
+  border-color: #566FB8;
+  -webkit-transform: scale(0.8, 0.8) translateY(2px);
+          transform: scale(0.8, 0.8) translateY(2px);
+  -webkit-transform-origin: center center;
+          transform-origin: center center; }
+
+.navbar-toggler-icon {
+  color: #566FB8; }
+
+.bg-gray {
+  background-color: #F7F7F7; }
+
+.bg-gray-2 {
+  background-color: #727C8F; }
+
+.btn-outline-brand {
+  color: #566FB8;
+  background-color: #FFF;
+  background-image: none;
+  border-color: #566FB8; }
+  .btn-outline-brand:hover, .btn-outline-brand:active, .btn-outline-brand:visited, .btn-outline-brand.active {
+    color: #fff;
+    background-color: #566FB8;
+    border-color: #566FB8; }
+
+.btn-shadowed {
+  box-shadow: -0.28px 0.96px 4px 0px rgba(0, 0, 0, 0.6); }
+
+.special-jumbtron {
+  border: 1px solid #303030;
+  background-color: rgba(84, 114, 138, 0.55);
+  border-radius: 5px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .special-jumbtron h1 {
+    text-shadow: rgba(255, 255, 255, 0.6) 1px 1px 1px, rgba(0, 0, 0, 0.6) -1px -1px 1px;
+    color: #FFF;
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px; }
+    @media (max-width: 760px) {
+      .special-jumbtron h1 {
+        font-size: 30px; } }
+  .special-jumbtron p.lead {
+    font-size: 19px;
+    color: #C1E5C5;
+    text-align: center;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif; }
+
+.btn-rounded {
+  border-radius: 50px; }
+
+.features-list {
+  display: flex;
+  padding: 30px 0px; }
+  @media (max-width: 760px) {
+    .features-list {
+      flex-direction: column; } }
+  .features-list .feature-item {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: #FFF;
+    text-align: center; }
+    .features-list .feature-item img {
+      -webkit-filter: brightness(0) invert(1);
+              filter: brightness(0) invert(1);
+      max-height: 50px;
+      margin-bottom: 30px; }
+    .features-list .feature-item .desc {
+      font-weight: 400;
+      font-family: "Raleway", sans-serif;
+      font-size: 18px;
+      padding: 0px 20px; }
+    @media (max-width: 760px) {
+      .features-list .feature-item {
+        width: 100%;
+        padding: 20px 0px; }
+        .features-list .feature-item .desc {
+          padding: 0px 50px; } }
+
+.vision-container {
+  background-color: #C4CBDA; }
+  @media (max-width: 760px) {
+    .vision-container {
+      padding: 0px; } }
+
+.vision-wrapper {
+  padding: 50px; }
+  .vision-wrapper h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Nunito Sans", sans-serif; }
+  .vision-wrapper p {
+    font-size: 18px;
+    font-family: "Raleway", sans-serif;
+    font-weight: normal;
+    color: #000; }
+
+.vision-image {
+  background-size: cover;
+  background-position: center center;
+  min-height: 700px; }
+
+.vision-box {
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  stroke-width: 0;
+  fill-opacity: 0.23;
+  stroke: #303030;
+  stroke-opacity: 1;
+  fill: #839cb1; }
+  .vision-box p {
+    padding: 0px 20px; }
+  .vision-box .triangle {
+    position: absolute;
+    bottom: 0px;
+    height: 100%;
+    width: 100%;
+    pointer-events: none; }
 
 /*# sourceMappingURL=main.css.map */
