@@ -7751,7 +7751,7 @@ html {
 ============================================================ */
 section.module.parallax-1 {
   background-image: url("../img/hero-banner.jpg");
-  background-position: 50% 0;
+  background-position: 50% 100%;
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: cover; }
@@ -7826,6 +7826,10 @@ body {
 .navbar-toggler-icon {
   color: #566FB8; }
 
+.float-container {
+  position: relative;
+  top: -40px; }
+
 .bg-gray {
   background-color: #F7F7F7; }
 
@@ -7835,12 +7839,15 @@ body {
 .bg-gray-3 {
   background-color: #54728A; }
 
+.bg-gray-4 {
+  background-color: #C4CBDA; }
+
 .btn-outline-brand {
   color: #566FB8;
   background-color: #FFF;
   background-image: none;
   border-color: #566FB8; }
-  .btn-outline-brand:hover, .btn-outline-brand:active, .btn-outline-brand:visited, .btn-outline-brand.active {
+  .btn-outline-brand:hover, .btn-outline-brand:active, .btn-outline-brand.active {
     color: #fff;
     background-color: #566FB8;
     border-color: #566FB8; }
@@ -7921,11 +7928,9 @@ body {
       .feature-item .desc {
         padding: 0px 50px; } }
 
-.vision-container {
-  background-color: #C4CBDA; }
-  @media (max-width: 760px) {
-    .vision-container {
-      padding: 0px; } }
+@media (max-width: 760px) {
+  .vision-container {
+    padding: 0px; } }
 
 .vision-wrapper {
   padding: 50px; }
@@ -8089,5 +8094,16 @@ footer {
     margin-bottom: 60px; }
     footer .social img {
       max-height: 30px; }
+
+@media (max-width: 760px) {
+  .slick-arrow {
+    position: absolute;
+    top: 30%;
+    -webkit-transform: translateY(-30%);
+            transform: translateY(-30%); }
+  .slick-prev {
+    left: 10px; }
+  .slick-next {
+    right: 10px; } }
 
 /*# sourceMappingURL=main.css.map */

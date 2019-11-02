@@ -29,6 +29,7 @@
 
   <!-- build:css -->
   <link rel="stylesheet" href="assets/css/main.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/css/tether.min.css">
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
@@ -71,32 +72,32 @@
 
   <section id="hero" class="module parallax parallax-1" data-type="background" data-speed="10">
     <div class="container">
-      <div class="jumbotron special-jumbtron">
-        <h1 class="display-4 text-center">An advocacy group creating access to quality wellness care has never been easier... </h1>
-        <p class="lead">Talk To A U.S Licensed Doctor Where You Want & When You Want For Just $9.90 A Month</p>
+      <div class="jumbotron special-jumbtron" data-aos="fade-up">
+        <h1 class="display-4 text-center" data-aos="fade-up" data-aos-delay="300">An advocacy group creating access to quality wellness care has never been easier... </h1>
+        <p class="lead" data-aos="fade-up" data-aos-delay="500">Talk To A U.S Licensed Doctor Where You Want & When You Want For Just $9.90 A Month</p>
         <hr>
-        <a class="btn btn-success btn-cta font-weight-bold text-uppercase btn-lg btn-rounded btn-shadowed" role="button" href="./">SEt UP MY ACCOUNT ✨</a>
+        <a  data-aos="fade-up" data-aos-delay="700" class="btn btn-success btn-cta font-weight-bold text-uppercase btn-lg btn-rounded btn-shadowed" role="button" href="./">SEt UP MY ACCOUNT ✨</a>
       </div>
 
     </div>
   </section>
 
-  <section id="features" class="bg-gray-2 feature-container">
-    <div class="container">
-      <div class="features-list">
-        <div class="feature-item">
+  <section id="features" class="feature-container bg-gray-4">
+    <div class="container bg-gray-2 float-container">
+      <div class="features-list ">
+        <div class="feature-item" data-aos="fade-up" data-aos-delay="200">
           <img src="./assets/img/clock.svg" alt="clock">
           <div class="desc">
               24/7 access to U.S.-licensed doctors by phone or video
           </div>
         </div>
-        <div class="feature-item">
+        <div class="feature-item" data-aos="fade-up" data-aos-delay="300">
             <img src="./assets/img/phone.svg" alt="phone">
             <div class="desc">
                 Our doctors diagnose and treat a wide range of medical conditions
             </div>
           </div>
-          <div class="feature-item">
+          <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
               <img src="./assets/img/pills.svg" alt="pills">
               <div class="desc">
                   Quality care from wherever you are
@@ -107,13 +108,13 @@
   </section>
 
 
-  <section id="vision" class="vision-container">
-    <div class="container"> 
-            <div class="row">
-              <div class="col-lg vision-image" style="background-image: url('./assets/img/vision1.jpeg');"> 
+  <section id="vision" class="vision-container bg-gray-4">
+    <div class="container "> 
+            <div class="row ">
+              <div class="col-lg vision-image" data-aos="fade" data-aos-delay="100" style="background-image: url('./assets/img/vision1.jpeg');"> 
               </div> 
               <div class="col-lg vision-wrapper">
-                <div class="vision-box">
+                <div class="vision-box" data-aos="fade" data-aos-delay="200">
                   <h1>Our Vision
                     <p>Telehealth Access to Doctors 24/7 on your schedule</p>
                   </h1>
@@ -139,8 +140,8 @@
 
   <section id="slide" class="slide-show">
       <div class="slideshow-vision">
-        <div>
-            <img src="./assets/img/vision1.png" alt="">
+        <div >
+            <img src="./assets/img/vision1.png" alt="" data-aos="fade-up" data-aos-delay="200">
             <div class="feature-item standalone bg-gray-2"> 
                 <div class="desc">
                     Video access in just a snap from any device
@@ -148,7 +149,7 @@
               </div>
         </div>
         <div>
-            <img src="./assets/img/vision2.png" alt="">
+            <img src="./assets/img/vision2.png" alt="" data-aos="fade-up" data-aos-delay="400">
             <div class="feature-item standalone bg-gray-2"> 
                 <div class="desc">
                     Get medical treatment & prescriptions for non-medical conditions from your smartphone
@@ -156,7 +157,7 @@
               </div>
         </div>
         <div>
-            <img src="./assets/img/vision3.png" alt="">
+            <img src="./assets/img/vision3.png" alt="" data-aos="fade-up" data-aos-delay="600">
             <div class="feature-item standalone bg-gray-2"> 
                 <div class="desc">
                     No more waiting rooms, or delays to visit a certified doctor
@@ -170,7 +171,7 @@
   <section id="testimonial" class="testimonial-wrapper">
       <div class="container">
           <div class="slideshow-testimonial">
-              <div class="testimonial-item">
+              <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
                 <img src="./assets/img/quote.svg" alt="" class="quote">
                  <h3> “We are transforming how people access healthcare around the world. We are creating a new kind of healthcare experience – one with greater convenience, outcomes, and value.” Our value partnerships combined with our Mobile App drives community participation in healthy behaviors designed to prevent and lower incident rates of preventable illnesses.”</h3>
               </div>  
@@ -185,7 +186,7 @@
 
 
   <section id="contact" class="contact-wrapper bg-gray-3">
-      <div class="container">
+      <div class="container" data-aos="fade-up" data-aos-delay="200">
         <h1 class="text-uppercase text-center text-white">contact Life helping hands</h1>
 
         <form class="contact-form">
@@ -216,10 +217,10 @@
   <section id="donate" class="donate-wrapper bg-gray-3">
       <div class="donate-border">
           <div class="container">
-              <h1 class="text-capitalize text-center font-weight-bold text-white">Help Us Continue To Provide Quality Care At An Affordable Price
+              <h1 data-aos="fade-up" data-aos-delay="200" class="text-capitalize text-center font-weight-bold text-white">Help Us Continue To Provide Quality Care At An Affordable Price
                 </h1>
               <div class="text-center">
-                  <a class="btn btn-success text-spaced btn-cta font-weight-bold text-uppercase btn-lg btn-rounded btn-shadowed" role="button" href="./">DONATE</a>
+                  <a data-aos="fade-up" data-aos-delay="400" class="btn btn-success text-spaced btn-cta font-weight-bold text-uppercase btn-lg btn-rounded btn-shadowed" role="button" href="./">DONATE</a>
               </div> 
             </div>
       </div>
@@ -241,10 +242,11 @@
 
   <!-- build:js -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/scripts.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+  <script src="assets/js/scripts.js"></script>
   <!-- endbuild -->
 </body>
 

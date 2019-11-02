@@ -11,7 +11,11 @@ $(document).ready(function(){
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                infinite: true
+                infinite: true,
+                arrows: true,
+                showArrows: true,
+                prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-chevron-left"></i></button>',
+                nextArrow: '<button type="button" class="slick-next"><i class="fa fa-chevron-right"></i></button>' 
               }
             }
         ]
@@ -24,5 +28,7 @@ $(document).ready(function(){
         showDots: false,
         arrows: false
     });
+
+    AOS.init();
   });
           

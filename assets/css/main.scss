@@ -41,7 +41,7 @@ $brand__purple : #566FB8;
 $brand__gray : #F7F7F7;
 $brand__gray2 : #727C8F;
 $brand__gray3 : #54728A;
-
+$brand__gray4: #C4CBDA;
 
 $brand__font : 'Nunito Sans', sans-serif;
 $brand__font2 : 'Raleway', sans-serif;
@@ -101,6 +101,11 @@ body{
     color: $brand__purple;
 }
 
+.float-container{
+    position: relative;
+    top: -40px; 
+}
+
 .bg-gray{
     background-color: $brand__gray;
 }
@@ -110,12 +115,15 @@ body{
 .bg-gray-3{
     background-color: $brand__gray3;
 }
+.bg-gray-4{
+    background-color: $brand__gray4;
+}
 .btn-outline-brand{
     color: $brand__purple;
     background-color: #FFF;
     background-image: none;
     border-color: $brand__purple;
-    &:hover, &:active, &:visited, &.active{
+    &:hover, &:active, &.active{
         color: #fff;
         background-color: $brand__purple;
         border-color: $brand__purple;
@@ -216,8 +224,7 @@ body{
     }
 }
 
-.vision-container{
-    background-color: #C4CBDA;
+.vision-container{ 
     // padding: 50px 0px;
     @include media-mobile{
         padding: 0px;
@@ -398,4 +405,18 @@ footer{
         margin-bottom: 60px;
     }
     font-family: $brand__font2;
+}
+
+@include media-mobile{
+    .slick-arrow{
+        position: absolute;
+        top: 30%;
+        transform: translateY(-30%);
+    }
+    .slick-prev{
+        left: 10px
+    }
+    .slick-next{
+        right: 10px;
+    }
 }
