@@ -30,6 +30,7 @@
 @import 'style';
 @import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
 
 //Responsive Style
 // @import 'responsive';
@@ -45,9 +46,17 @@ $brand__gray4: #C4CBDA;
 
 $brand__font : 'Nunito Sans', sans-serif;
 $brand__font2 : 'Raleway', sans-serif;
+$brand__font3 : 'Montserrat', sans-serif;
 
 body{
     font-family: $brand__font;
+}
+
+.font2{
+    font-family: $brand__font2;
+}
+.font3{
+    font-family: $brand__font3;
 }
 
 .navbar{
@@ -105,7 +114,9 @@ body{
     position: relative;
     top: -40px; 
 }
-
+.btn-wide{
+    width: 70%
+}
 .bg-gray{
     background-color: $brand__gray;
 }
@@ -423,4 +434,69 @@ footer{
     .slick-next{
         right: 0px;
     }
+}
+
+
+.navbar ~ .pad-top{
+    margin-top: 100px;
+    @include media-mobile{
+        margin-top: 75px;
+    }
+}
+
+
+
+.pricing-box{
+    border: 1px solid rgba(48,48,48,0.35);
+    display: flex;
+    flex-direction: column;
+    margin: 30px auto;
+}
+
+.pricing-cta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 10px;
+    border-bottom: 1px solid rgba(48,48,48,0.35);
+    .frequency{
+        font-size: 20px;
+        font-family: $brand__font3;
+        line-height: 1.5;
+        padding-bottom: 12px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .price{
+        word-wrap: break-word;
+        display: inline-block;
+        font-family: $brand__font3;
+        font-size: 88px;
+        line-height: 88px;
+    }
+    .price-wrap{
+        display: flex;
+        margin-bottom: 10px;
+        sup{
+            top: 20px;
+            vertical-align: top;
+            font-size: 25px;
+            font-family: $brand__font3;
+        }
+    }
+
+    small{
+        margin-bottom: 30px;
+    }
+}
+
+.pricing-features{
+    padding: 30px 15px;
+}
+
+.btn-dark{
+    border-color: rgba(84,114,138,1);
+    background-color: rgba(84,114,138,1);
 }

@@ -12,6 +12,7 @@
  */
 @import url("https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
 *,
 *::before,
 *::after {
@@ -7788,6 +7789,12 @@ section.module.parallax-1 {
 body {
   font-family: "Nunito Sans", sans-serif; }
 
+.font2 {
+  font-family: "Raleway", sans-serif; }
+
+.font3 {
+  font-family: "Montserrat", sans-serif; }
+
 .navbar {
   background-color: #F7F7F7 !important; }
   .navbar .navbar-brand img {
@@ -7829,6 +7836,9 @@ body {
 .float-container {
   position: relative;
   top: -40px; }
+
+.btn-wide {
+  width: 70%; }
 
 .bg-gray {
   background-color: #F7F7F7; }
@@ -8109,5 +8119,56 @@ footer {
     left: 0px; }
   .slick-next {
     right: 0px; } }
+
+.navbar ~ .pad-top {
+  margin-top: 100px; }
+  @media (max-width: 760px) {
+    .navbar ~ .pad-top {
+      margin-top: 75px; } }
+
+.pricing-box {
+  border: 1px solid rgba(48, 48, 48, 0.35);
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto; }
+
+.pricing-cta {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+  border-bottom: 1px solid rgba(48, 48, 48, 0.35); }
+  .pricing-cta .frequency {
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.5;
+    padding-bottom: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; }
+  .pricing-cta .price {
+    word-wrap: break-word;
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-size: 88px;
+    line-height: 88px; }
+  .pricing-cta .price-wrap {
+    display: flex;
+    margin-bottom: 10px; }
+    .pricing-cta .price-wrap sup {
+      top: 20px;
+      vertical-align: top;
+      font-size: 25px;
+      font-family: "Montserrat", sans-serif; }
+  .pricing-cta small {
+    margin-bottom: 30px; }
+
+.pricing-features {
+  padding: 30px 15px; }
+
+.btn-dark {
+  border-color: #54728a;
+  background-color: #54728a; }
 
 /*# sourceMappingURL=main.css.map */
