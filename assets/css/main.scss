@@ -526,3 +526,14 @@ footer{
     border-color: rgba(84,114,138,1);
     background-color: rgba(84,114,138,1);
 }
+
+.form-group{
+    &.required label{ 
+            position: relative;
+            &:after{
+                content: '*';
+                color: #fd6060;
+                margin-left: 5px;
+            }
+    } 
+}

@@ -8213,4 +8213,11 @@ footer {
   border-color: #54728a;
   background-color: #54728a; }
 
+.form-group.required label {
+  position: relative; }
+  .form-group.required label:after {
+    content: '*';
+    color: #fd6060;
+    margin-left: 5px; }
+
 /*# sourceMappingURL=main.css.map */
