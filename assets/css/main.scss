@@ -347,7 +347,7 @@ body{
     > .row > .col-md{
         margin-bottom: 30px;
     }
-    .form-control{
+    .form-control{ 
         background-color: transparent !important;
         color: #FFF;
         border: 0px;
@@ -358,23 +358,49 @@ body{
             background-color: transparent;
             border: 1px solid #FFF;
         }
-        
+        &.form-dark {
+            color: #000;
+            border-bottom: 1px solid $brand__gray3;
+            &:focus, &:active, &.active{
+                background-color: transparent;
+                border: 1px solid $brand__gray3;
+            }
+        }
     }
-
     ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
         color: #FFF;
-        opacity: 1; /* Firefox */
+        opacity: 1; /* Firefox */ 
       }
       
       :-ms-input-placeholder { /* Internet Explorer 10-11 */
         color: #FFF;
+        .form-dark &{
+            color: $brand__gray3;
+        }
       }
       
       ::-ms-input-placeholder { /* Microsoft Edge */
         color: #FFF;
+        .form-dark &{
+            color: $brand__gray3;
+        }
       }
 }
-
+.form-dark{
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: $brand__gray3;
+        opacity: 1; /* Firefox */ 
+      }
+      
+      :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $brand__gray4;
+         
+      }
+      
+      ::-ms-input-placeholder { /* Microsoft Edge */
+        color: $brand__gray4; 
+      }
+}
 
 .donate-wrapper{
     .container{

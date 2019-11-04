@@ -8038,6 +8038,12 @@ body {
   .contact-form .form-control:focus, .contact-form .form-control:active, .contact-form .form-control.active {
     background-color: transparent;
     border: 1px solid #FFF; }
+  .contact-form .form-control.form-dark {
+    color: #000;
+    border-bottom: 1px solid #54728A; }
+    .contact-form .form-control.form-dark:focus, .contact-form .form-control.form-dark:active, .contact-form .form-control.form-dark.active {
+      background-color: transparent;
+      border: 1px solid #54728A; }
 
 .contact-form ::-webkit-input-placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -8066,10 +8072,46 @@ body {
 .contact-form :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #FFF; }
+  .form-dark .contact-form :-ms-input-placeholder {
+    color: #54728A; }
 
 .contact-form ::-ms-input-placeholder {
   /* Microsoft Edge */
   color: #FFF; }
+  .form-dark .contact-form ::-ms-input-placeholder {
+    color: #54728A; }
+
+.form-dark ::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #54728A;
+  opacity: 1;
+  /* Firefox */ }
+
+.form-dark :-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #54728A;
+  opacity: 1;
+  /* Firefox */ }
+
+.form-dark ::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #54728A;
+  opacity: 1;
+  /* Firefox */ }
+
+.form-dark ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #54728A;
+  opacity: 1;
+  /* Firefox */ }
+
+.form-dark :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #C4CBDA; }
+
+.form-dark ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #C4CBDA; }
 
 .donate-wrapper {
   padding-top: 80px;
