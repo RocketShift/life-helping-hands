@@ -7754,7 +7754,6 @@ section.module.parallax-1 {
   background-image: url("../img/hero-banner.jpg");
   background-position: 50% 100%;
   background-repeat: repeat;
-  background-attachment: fixed;
   background-size: cover; }
 
 @media (max-width: 760px) {
