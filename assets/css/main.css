@@ -7833,8 +7833,10 @@ body {
   color: #566FB8; }
 
 .float-container {
-  position: relative;
-  top: -40px; }
+  position: relative; }
+
+.slideshow-vision {
+  padding: 0px !important; }
 
 .btn-wide {
   width: 70%; }
@@ -7894,7 +7896,7 @@ body {
         font-size: 30px; } }
   .special-jumbtron p.lead {
     font-size: 19px;
-    color: #C1E5C5;
+    color: #C4CBDA;
     text-align: center;
     font-weight: 400;
     font-family: "Raleway", sans-serif; }

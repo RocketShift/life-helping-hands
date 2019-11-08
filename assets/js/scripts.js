@@ -5,6 +5,7 @@ $(document).ready(function(){
         slidesToScroll: 3,
         showDots: false,
         arrows: false, 
+        centerPadding: "0px",
         responsive: [
             {
               breakpoint: 768,
