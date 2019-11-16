@@ -41,4 +41,16 @@ $(document).ready(function(){
       horizontal: false
     });
   });
-          
+  
+  $(function(){
+    var hash = window.location.hash;
+    hash && $('#list-tab a[href="' + hash + '"]').tab('show');
+  
+    $('#account-dropdown a').click(function (e) {
+      setTimeout(function(){
+        location.reload();
+      }, 100);
+    });
+  });
+
+ 
